@@ -1,0 +1,19 @@
+body{
+    background-color: #1a302e;
+    
+}
+
+section{
+    color: #ACBF8F;   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+section span{
+    font-size: 60px;
+    color: #B4B9BB;
+    display: block;
+}
+
+html{
+    margin: 10ch;
+    margin-left: 15ch;
+}
