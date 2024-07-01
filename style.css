@@ -1,19 +1,45 @@
-body{
+body {
     background-color: #1a302e;
-    
+    margin: 0px;
 }
 
-section{
+section {
     color: #ACBF8F;   
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5ch;
+    margin-left: 10ch;
 }
-section span{
-    font-size: 60px;
+
+section span {
+    font-size: 40px;
     color: #B4B9BB;
     display: block;
 }
 
-html{
-    margin: 11ch;
-    margin-left: 15ch;
+section a {
+    color: #B4B9BB;
+}
+
+section img {
+    height: 40ch;
+}
+
+.contact {
+    background-color: #ACBF8F;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+h2 {
+    color: #1a302e;
+    margin-top: 8ch;
+    padding: 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
 }
