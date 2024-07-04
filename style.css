@@ -1,128 +1,14 @@
 body {
     background-color: #1a302e;
-    margin: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
-
-#intro {
-    color: #ACBF8F;   
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 5ch;
-    margin-left: 10ch;
-    line-height: 30px;
-}
-#intro h1{
-    font-size: 30px;
-    line-height: 10px;
-
-}
-article{
-    display: flex;
-    padding-right: 100px;
-}
-
-
-#project h5 {
-    text-align: end;
-    font-size: 2ch;
-    color: #1a302e;
-    white-space: nowrap;
-    margin-top: -2px;
-    margin-bottom: 20px;
-}
-
-#project img{
-    height: 200px;
-    width: 360px;
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-bottom: 50px;
-    width: 100%;
-    margin-right: 100px;
-}
-
-
-
-#intro span {
-    font-size: 30px;
-    color: #B4B9BB;
-    display: block;
-}
-
-#intro a {
-    color: #B4B9BB;
-}
-
-#intro img {
-    height: 40ch;
-}
-
-#project{
-    background-color: #ACBF8F;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 8ch;
-    padding: 10px;
-    
-    
-}
-#project li{
-    background-color: #1a302e;
-    color: #ACBF8F;
-    gap: 10px;
-    border-radius: 20px;
-    margin-bottom: 7px;
-    text-align: center;
-    padding: 8px;
-}
-
-
-#project ul{
-    list-style-type: none;
-    padding: 0;
     margin: 0;
-    font-size: smaller;
-    align-items: end;
-}
-
-#resume{
-    background-color: #ACBF8F;
-    color: #1a302e;
-    padding: 6px;
-    border-radius: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-#project h3{
-    margin-left: 2ch;
-    color: #1a302e;
-}
-
-#contact {
-    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
 }
 
-#contact h2 {
-    color: #ACBF8F;
-    margin-top: 8ch;
-    padding: 10px;
-}
-
-.icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px;
-    justify-items: center;
-    text-align: center;
-}
 nav{
     font-size: 80%;
     margin: 1ch;
     margin-left: 5ch;
-    margin-right: 10ch;
+    margin-right: 5ch;
     
 }
 
@@ -154,20 +40,7 @@ nav ul li button{
     background-color: #ACBF8F;
     color: #1a302e;
 }
-
-
-
-.sr-only {
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    clip: rect(0, 0, 0, 0) !important;
-    border: 0 !important;
-  }
-  @media (min-width: 360px) {
+@media (min-width: 360px) {
     nav ul li:first-child {
       flex-basis: auto;
       flex-grow: 1;
@@ -175,13 +48,139 @@ nav ul li button{
     } 
   } 
 
-  
-  
-   
-    
+  #resume{
+    background-color: #ACBF8F;
+    color: #1a302e;
+    padding: 6px;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
+#intro {
+    color: #ACBF8F;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 2rem;
+}
 
+#intro h1 {
+    font-size: 2rem;
+}
 
+#intro span {
+    font-size: 2rem;
+    color: #B4B9BB;
+    display: block;
+}
 
+#project {
+    background-color: #ACBF8F;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 2rem;
+    padding: 1rem;
+}
 
+#project h3 {
+    margin-left: 1rem;
+    color: #1a302e;
+    text-align: center;
+}
 
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#project img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+#project h5 {
+    text-align: center;
+    font-size: 1rem;
+    color: #1a302e;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+#project ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: smaller;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#project li {
+    background-color: #1a302e;
+    color: #ACBF8F;
+    border-radius: 30px;
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+
+#contact {
+    background-color: #ACBF8F;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#contact h2 {
+    color: #1a302e;
+    margin-bottom: 1rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+@media (min-width: 768px) {
+    #intro {
+        margin: 2rem 5rem;
+    }
+
+    article {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    #project img {
+        margin-right: 1rem;
+        width: 50%;
+    }
+
+    #project h5 {
+        text-align: end;
+        font-size: 1.5rem;
+    }
+
+    #project ul {
+        justify-content: flex-start;
+    }
+
+    #contact {
+        padding: 4rem 2rem;
+    }
+}
