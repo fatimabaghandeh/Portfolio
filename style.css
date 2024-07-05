@@ -31,7 +31,9 @@ nav ul a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     align-items: center ;
     display: block ;
+
 }
+
 nav ul li:first-child{
     flex-basis: 100%  ;
     text-align: center ;
@@ -55,6 +57,9 @@ nav ul li button{
     border-radius: 20px;
     padding-left: 15px;
     padding-right: 15px;
+}
+#resume:hover{
+    background-color: #B4B9BB;
 }
 
 #intro {
