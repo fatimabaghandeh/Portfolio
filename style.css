@@ -42,7 +42,7 @@ nav ul li button{
     background-color: #ACBF8F;
     color: #1a302e;
 }
-@media (min-width: 360px) {
+@media (min-width: 420px) {
     nav ul li:first-child {
       flex-basis: auto;
       flex-grow: 1;
