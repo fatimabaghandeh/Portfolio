@@ -11,6 +11,40 @@ nav{
     margin-right: 5ch;
     
 }
+#bars{
+    color: #ACBF8F;
+    display: none;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: end ;
+}
+
+@media(max-width:420px){
+    #list{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: #1a302e;
+        gap: 0;
+        overflow: hidden;
+
+        
+        
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+        padding-bottom: 30px;
+        margin-bottom: 10px;
+        font-size: larger;
+    }
+    #bars{
+        display: block;
+    }
+}
 
 nav ul{
     list-style-type: none;
@@ -21,6 +55,8 @@ nav ul{
     align-items: center;
     margin: 0;
     padding: 0;
+
+
  
 
 }
@@ -33,21 +69,21 @@ nav ul a{
     display: block ;
 
 }
+ 
 
-nav ul li:first-child{
-    flex-basis: 100%  ;
-    text-align: center ;
-}
 nav ul li button{
     background-color: #ACBF8F;
     color: #1a302e;
 }
+
+
 @media (min-width: 420px) {
     nav ul li:first-child {
       flex-basis: auto;
       flex-grow: 1;
       text-align: left;
     } 
+  
   } 
 
   #resume{
@@ -65,7 +101,8 @@ nav ul li button{
 #intro {
     color: #ACBF8F;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 2rem;
+    margin: 2.1rem;
+    
 }
 
 #intro h1 {
