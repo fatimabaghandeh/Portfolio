@@ -172,11 +172,11 @@ article {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    font-size: smaller;
+    font-size: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 #project li {
@@ -184,7 +184,7 @@ article {
     color: #ACBF8F;
     border-radius: 30px;
     text-align: center;
-    padding: 1rem 2rem;
+    padding: 2rem 4rem;
 }
 
 #contact {
@@ -240,7 +240,7 @@ article {
     }
     #project h4 {
         text-align: end;
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
 
 
