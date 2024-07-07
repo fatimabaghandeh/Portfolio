@@ -6,18 +6,17 @@ body {
 
 nav{
     font-size: 80%;
-    margin: 2ch;
-    margin-left: 10ch;
-    margin-right: 10ch;
-    padding-bottom: 60px;
-    font-size: larger;
+    margin: 1ch;
+    margin-left: 5ch;
+    margin-right: 5ch;
+    padding-bottom: 30px;
     
 }
 #bars{
     color: #ACBF8F;
     display: none;
-    font-size: 3rem;
-    margin-top: 40px;
+    font-size: 1.5rem;
+    margin-top: 20px;
     text-align: end ;
 }
 
@@ -67,7 +66,7 @@ nav ul{
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
-    gap: 60px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -106,10 +105,10 @@ nav ul li button{
   #resume{
     background-color: #ACBF8F;
     color: #1a302e;
-    padding: 12px;
-    border-radius: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 6px;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 #resume:hover{
     background-color: #B4B9BB;
@@ -118,17 +117,16 @@ nav ul li button{
 #intro {
     color: #ACBF8F;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 4rem;
-    font-size: 2rem;
+    margin: 2.1rem;
     
 }
 
 #intro h1 {
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 #intro span {
-    font-size: 4rem;
+    font-size: 2rem;
     color: #B4B9BB;
     display: block;
 }
@@ -136,15 +134,15 @@ nav ul li button{
 #project {
     background-color: #ACBF8F;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 4rem;
-    padding: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
 }
 
 #project h3 {
-    margin-left: 2rem;
+    margin-left: 1rem;
     color: #1a302e;
     text-align: center;
-    font-size: 50px;
+    font-size: 25px;
 }
 
 article {
@@ -155,28 +153,28 @@ article {
 
 #project img {
     width: 100%;
-    max-width: 700px;
+    max-width: 400px;
     border-radius: 10px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 #project h4 {
     text-align: center;
     color: #1a302e;
     margin: 0;
-    margin-bottom: 2rem;
-    padding: 40px;
+    margin-bottom: 1rem;
+    padding: 20px;
 }
 
 #project ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    font-size: 2rem;
+    font-size: smaller;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 0.5rem;
 }
 
 #project li {
@@ -184,25 +182,25 @@ article {
     color: #ACBF8F;
     border-radius: 30px;
     text-align: center;
-    padding: 2rem 4rem;
+    padding: 0.5rem 1rem;
 }
 
 #contact {
     background-color: #ACBF8F;
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 2rem 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #contact h2 {
     color: #1a302e;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .icons {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .sr-only {
@@ -217,7 +215,7 @@ article {
 }
 
 @media (min-width: 1600px) {
-
+    
     #intro {
         margin: 2rem 5rem;
     }
@@ -231,18 +229,13 @@ article {
 
     #project img {
         margin-right: 1rem;
-        width: 100%;
+        width: 50%;
     }
 
     #project h5 {
         text-align: end;
         font-size: 1.5rem;
     }
-    #project h4 {
-        text-align: end;
-        font-size: 3rem;
-    }
-
 
     #project ul {
         justify-content: flex-start;
