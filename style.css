@@ -9,6 +9,7 @@ nav{
     margin: 1ch;
     margin-left: 5ch;
     margin-right: 5ch;
+    padding-bottom: 30px;
     
 }
 #bars{
@@ -47,6 +48,17 @@ nav{
     #intro{
         padding-bottom: 150px;
         padding-top: 40px;
+    }
+    #project h3{
+        font-size: 30px;
+        padding: 20px;
+    }
+    #project h4{
+        padding: 30px;
+        font-size: 1.5rem;
+
+
+
     }
 }
 
@@ -130,6 +142,7 @@ nav ul li button{
     margin-left: 1rem;
     color: #1a302e;
     text-align: center;
+    font-size: 25px;
 }
 
 article {
@@ -145,12 +158,12 @@ article {
     margin-bottom: 1rem;
 }
 
-#project h5 {
+#project h4 {
     text-align: center;
-    font-size: 1rem;
     color: #1a302e;
     margin: 0;
     margin-bottom: 1rem;
+    padding: 20px;
 }
 
 #project ul {
@@ -201,7 +214,7 @@ article {
     border: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     #intro {
         margin: 2rem 5rem;
     }
