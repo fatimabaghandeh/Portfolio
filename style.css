@@ -10,6 +10,7 @@ nav{
     margin-left: 10ch;
     margin-right: 10ch;
     padding-bottom: 60px;
+    font-size: larger;
     
 }
 #bars{
@@ -118,6 +119,7 @@ nav ul li button{
     color: #ACBF8F;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 4rem;
+    font-size: 2rem;
     
 }
 
@@ -153,7 +155,7 @@ article {
 
 #project img {
     width: 100%;
-    max-width: 400px;
+    max-width: 700px;
     border-radius: 10px;
     margin-bottom: 2rem;
 }
@@ -229,13 +231,18 @@ article {
 
     #project img {
         margin-right: 1rem;
-        width: 50%;
+        width: 100%;
     }
 
     #project h5 {
         text-align: end;
         font-size: 1.5rem;
     }
+    #project h4 {
+        text-align: end;
+        font-size: 1.5rem;
+    }
+
 
     #project ul {
         justify-content: flex-start;
