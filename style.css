@@ -1,68 +1,102 @@
+:root[data-theme="light"] {
+    --background-color: #1a302e;
+    --font-color: #1a302e;
+    --accent-color: #ACBF8F;
+    --bgp-color: #ACBF8F;
+    --text-color: #B4B9BB;
+    --sun-color: #8a8a8a;
+    --moon-color: #B1B0B5;
+    --theme-switcher-bg: #F5F5F6;
+    --theme-switcher-highlight: #FFD371;
+    --switch-circle-pos: 0.2rem;
+}
+
+:root[data-theme="dark"] {
+    --background-color: #010300;
+    --font-color: #ACBF8F;
+    --accent-color: #ACBF8F;
+    --bgp-color: #010300;
+    --text-color: #B4B9BB;
+    --sun-color: #010300;
+    --moon-color: #B4B9BB;
+    --theme-switcher-bg: #ACBF8F;
+    --theme-switcher-highlight: #010300;
+    --border-color: #B4B9BB;
+    --switch-circle-pos: calc(100% - 1.25rem); 
+}
+
+
 body {
-    background-color: #1a302e;
+    background-color: var(--background-color);
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav{
+section {
+    padding: 1rem; 
+}
+
+:root[data-theme="dark"] #intro{
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav {
     font-size: 80%;
     margin: 1ch;
     margin-left: 5ch;
     margin-right: 5ch;
     padding-bottom: 30px;
-    
 }
-#bars{
-    color: #ACBF8F;
+
+#bars {
+    color: var(--accent-color);
     display: none;
     font-size: 1.5rem;
     margin-top: 20px;
-    text-align: end ;
+    text-align: end;
 }
 
-@media(max-width:420px){
-    #list{
+@media(max-width: 420px) {
+    #list {
         position: absolute;
         top: 70px;
         left: 0;
         right: 0;
         flex-direction: column;
         text-align: center;
-        background-color: #1a302e;
+        background-color: var(--background-color);
         gap: 0;
         overflow: hidden;
-
-        
-        
+        flex-wrap: nowrap;
+        margin: 40px;
     }
-    nav ul li{
-        padding: 20px;
+    nav ul li {
         padding-top: 0;
         padding-bottom: 30px;
         margin-bottom: 10px;
         font-size: larger;
     }
-    #bars{
+    #bars {
         display: block;
     }
-    #intro{
+    #theme-switcher{
+        margin-bottom: 50px;
+    }
+    #intro {
         padding-bottom: 150px;
         padding-top: 40px;
     }
-    #project h3{
+    #project h3 {
         font-size: 30px;
         padding: 20px;
     }
-    #project h4{
+    #project h4 {
         padding: 30px;
         font-size: 1.5rem;
-
-
-
     }
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
@@ -71,54 +105,46 @@ nav ul{
     align-items: center;
     margin: 0;
     padding: 0;
-
-
- 
-
 }
 
-nav ul a{
+nav ul a {
     text-decoration: none;
-    color: #B4B9BB;
+    color: var(--text-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    align-items: center ;
-    display: block ;
-
-}
- 
-
-nav ul li button{
-    background-color: #ACBF8F;
-    color: #1a302e;
+    align-items: center;
+    display: block;
 }
 
+nav ul li button {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
 
 @media (min-width: 420px) {
     nav ul li:first-child {
-      flex-basis: auto;
-      flex-grow: 1;
-      text-align: left;
-    } 
-  
-  } 
+        flex-basis: auto;
+        flex-grow: 1;
+        text-align: left;
+    }
+}
 
-  #resume{
-    background-color: #ACBF8F;
-    color: #1a302e;
+#resume {
+    background-color: var(--accent-color);
+    color: var(--background-color);
     padding: 6px;
     border-radius: 20px;
     padding-left: 15px;
     padding-right: 15px;
 }
-#resume:hover{
-    background-color: #B4B9BB;
+
+#resume:hover {
+    background-color: var(--text-color);
 }
 
 #intro {
-    color: #ACBF8F;
+    color: var(--accent-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 2.1rem;
-    
 }
 
 #intro h1 {
@@ -127,12 +153,12 @@ nav ul li button{
 
 #intro span {
     font-size: 2rem;
-    color: #B4B9BB;
+    color: var(--text-color);
     display: block;
 }
 
 #project {
-    background-color: #ACBF8F;
+    background-color:var(--bgp-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 2rem;
     padding: 1rem;
@@ -140,7 +166,7 @@ nav ul li button{
 
 #project h3 {
     margin-left: 1rem;
-    color: #1a302e;
+    color: var(--font-color);
     text-align: center;
     font-size: 25px;
 }
@@ -160,7 +186,7 @@ article {
 
 #project h4 {
     text-align: center;
-    color: #1a302e;
+    color:  var(--font-color);
     margin: 0;
     margin-bottom: 1rem;
     padding: 20px;
@@ -178,22 +204,27 @@ article {
 }
 
 #project li {
-    background-color: #1a302e;
-    color: #ACBF8F;
+    background-color: var(--font-color);
+    color: var(--bgp-color);
     border-radius: 30px;
     text-align: center;
     padding: 0.5rem 1rem;
 }
 
 #contact {
-    background-color: #ACBF8F;
+    background-color: var(--bgp-color);
     text-align: center;
     padding: 2rem 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+#github{
+    background-color: var(--text-color);
+    border-radius: 40px;
+
+}
 
 #contact h2 {
-    color: #1a302e;
+    color:  var(--font-color);
     margin-bottom: 1rem;
 }
 
@@ -215,33 +246,62 @@ article {
 }
 
 @media (min-width: 1600px) {
-    
     #intro {
         margin: 2rem 5rem;
     }
-
-
     article {
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
     }
-
     #project img {
         margin-right: 1rem;
         width: 50%;
     }
-
     #project h5 {
         text-align: end;
         font-size: 1.5rem;
     }
-
     #project ul {
         justify-content: flex-start;
     }
-
     #contact {
         padding: 4rem 2rem;
     }
+}
+
+#sun {
+    color: var(--sun-color);
+}
+
+#moon {
+    color: var(--moon-color);
+}
+
+#theme-switcher {
+    background-color: var(--theme-switcher-bg);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.3rem;
+    position: relative;
+    cursor: pointer; 
+    
+}
+
+#theme-switcher::before {
+    content: "";
+    position: absolute;
+    background-color: var(--theme-switcher-highlight);
+    border-radius: 50px;
+    width: 1.2rem;
+    height: 1.2rem;
+    z-index: 0;
+    left: var(--switch-circle-pos);
+    transition: left 0.3s ease;
+}
+
+#theme-switcher i {
+    z-index: 1;
 }
