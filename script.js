@@ -17,6 +17,7 @@ const switchTheme = () => {
     let dataTheme = root.getAttribute("data-theme"),
     newTheme = (dataTheme === "light") ? "dark" : "light";
     root.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme)
 }
 
 document.querySelector("#theme-switcher").addEventListener("click", switchTheme)
